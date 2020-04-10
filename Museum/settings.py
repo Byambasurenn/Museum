@@ -26,7 +26,9 @@ SECRET_KEY = '=p+qsal9adc$+tse9mhisz@_%(hdenjecxe5x5)pu3krx8gk6k'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '192.168.56.1'
+    '192.168.56.1',
+    '127.0.0.1',
+    '66a04f9e.ngrok.io'
 ]
 
 
@@ -70,6 +72,11 @@ TEMPLATES = [
         },
     },
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 10
+}
 
 WSGI_APPLICATION = 'Museum.wsgi.application'
 
