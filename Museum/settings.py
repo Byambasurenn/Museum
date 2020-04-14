@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '192.168.56.1',
     '127.0.0.1',
-    '66a04f9e.ngrok.io'
+    'ac01024b.ngrok.io'
 ]
 
 
@@ -129,3 +129,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'

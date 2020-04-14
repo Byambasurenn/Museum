@@ -17,4 +17,4 @@ class GroupSerializer(serializers.HyperlinkedModelSerializer):
 class ExhibitSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Exhibit
-        fields = ['nfc_id', 'title', 'description', 'image']
+        fields = ['nfc_id', 'title', 'description', 'image', 'audio']
