@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '192.168.56.1',
     '127.0.0.1',
-    '08430bc6.ngrok.io'
+    'efdcc9ce.ngrok.io'
 ]
 
 
